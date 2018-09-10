@@ -1,0 +1,106 @@
+// header.scss
+
+$font-stack: Helvetica, sans-serif;
+$font_intro: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$primary-color: rgba(0, 0, 0, 0.938);
+$width: 100%;
+$height: 100%;
+$margin: 0;
+$padding: 0;
+$border: 2px solid;
+$transform: uppercase;
+$t_color: rgba(255, 255, 255, 0.947);
+
+body{
+    margin: $margin;
+    padding: $padding;
+    width: $width;
+    height: $height;
+    // header
+    .header_background{
+            width: $width;
+            height: $height;
+            margin: auto;
+            background: url(../img/background/header_background.jpg) no-repeat;
+            background-size: contain;   
+        // header background img
+        #header{ 
+            margin: $margin;
+            width: $width;
+            height: 100px; 
+        }
+        // logo
+        .logo{
+            float: left;
+            width: 50%;
+            height: 100px;
+            margin: $margin;
+            .logo_container{
+                width: 110px;
+                height: 90px;
+                margin-top: 7.5%;
+                margin-left: 35%;
+            }
+            .logo_img{
+                width: $width;
+                height: $height;
+                background: url(../img/logo/logo.png) no-repeat;
+                background-size: contain;
+            }
+        }
+        // navigation bar
+        .nav_container{
+            margin: $margin;
+            padding: $padding;
+            margin-top: 3%;
+            width: 50%;
+            height: 100px;
+            float: left;
+            .main_nav{
+                ul{
+                    list-style: none;
+                }
+                li{
+                    display: inline-block;
+                    padding: 0 10px;          
+                }
+                a{
+                    display: block;
+                    padding-left: 5px;
+                    text-decoration: none;
+                    color: $t_color;
+                    text-transform: $transform;
+                    padding: 0 6px;
+                }
+                .home_border{
+                    border-left: $border $t_color;
+                    border-right: $border $t_color;
+
+                }
+            }
+        }
+        .intro{
+            width: $width;
+            height: 900px;
+            margin: $margin;
+            .intro_text{
+                margin-left: 17.5%;
+                color: $t_color;
+                padding-top: 300px;
+            }
+            .intro_h1{
+                text-transform: $transform;
+                font-family: $font_intro;
+                font-size: 90px;
+            }
+            strong{
+                color: rgba(255, 0, 0, 0.995);
+            }
+            .intro_p{
+                font-family: $font_intro;
+                font-size: 40px;
+            }
+
+        }
+    }
+}
