@@ -1,5 +1,7 @@
 // header.scss
 
+// @import 'arrow';
+
 $font-stack: Helvetica, sans-serif;
 $font_intro: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 $primary-color: rgba(0, 0, 0, 0.938);
@@ -84,9 +86,10 @@ body{
             height: 900px;
             margin: $margin;
             .intro_text{
-                margin-left: 17.5%;
+                // margin-left: 17%;
                 color: $t_color;
-                padding-top: 300px;
+                padding-top: 280px;
+                padding-left: 290px;
             }
             .intro_h1{
                 text-transform: $transform;
@@ -98,9 +101,50 @@ body{
             }
             .intro_p{
                 font-family: $font_intro;
-                font-size: 40px;
+                font-size: 36px;
+                padding-top: 30px;
+                padding-bottom: 12px;
             }
-
+            p{
+                margin: $margin;
+            }
+            .social{
+                margin-left: 14%;
+                ul{
+                    list-style: none;
+                }
+                li{
+                    display: inline-block;
+                    padding: 0 10px;          
+                }
+                .icon{
+                    width: 40px;
+                    height: 40px;
+                }
+                .face{
+                    background: url(../img/icons/icon_face.png) no-repeat;
+                    background-size: contain;
+                }
+                .link{
+                    background: url(../img/icons/icon_in.png) no-repeat;
+                    background-size: contain;
+                }
+                .gmail{
+                    background: url(../img/icons/icon_g+.png) no-repeat;
+                    background-size: contain;
+                }  
+                .twiter{
+                    background: url(../img/icons/icon_twiter.png) no-repeat;
+                    background-size: contain;
+                }  
+                .insta{
+                    background: url(../img/icons/icon_insta.png) no-repeat;
+                    background-size: contain;
+                }   
+                a{
+                    display: block;
+                }
+            }
         }
     }
 }
