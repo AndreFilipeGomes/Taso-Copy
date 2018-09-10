@@ -80,7 +80,8 @@ body {
           padding: 0 10px; }
         body .header_background .intro .social .icon {
           width: 40px;
-          height: 40px; }
+          height: 40px;
+          background-size: contain; }
         body .header_background .intro .social .face {
           background: url(../img/icons/icon_face.png) no-repeat;
           background-size: contain; }

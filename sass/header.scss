@@ -12,6 +12,12 @@ $padding: 0;
 $border: 2px solid;
 $transform: uppercase;
 $t_color: rgba(255, 255, 255, 0.947);
+$backgrounds: contain;
+$repeat: no-repeat;
+$display: inline-block;
+$display_b: block;
+$style: none;
+$floatl: left; 
 
 body{
     margin: $margin;
@@ -23,8 +29,8 @@ body{
             width: $width;
             height: $height;
             margin: auto;
-            background: url(../img/background/header_background.jpg) no-repeat;
-            background-size: contain;   
+            background: url(../img/background/header_background.jpg) $repeat;
+            background-size: $backgrounds;   
         // header background img
         #header{ 
             margin: $margin;
@@ -33,7 +39,7 @@ body{
         }
         // logo
         .logo{
-            float: left;
+            float: $floatl;
             width: 50%;
             height: 100px;
             margin: $margin;
@@ -46,8 +52,8 @@ body{
             .logo_img{
                 width: $width;
                 height: $height;
-                background: url(../img/logo/logo.png) no-repeat;
-                background-size: contain;
+                background: url(../img/logo/logo.png) $repeat;
+                background-size: $backgrounds;
             }
         }
         // navigation bar
@@ -57,19 +63,19 @@ body{
             margin-top: 3%;
             width: 50%;
             height: 100px;
-            float: left;
+            float: $floatl;
             .main_nav{
                 ul{
-                    list-style: none;
+                    list-style: $style;
                 }
                 li{
-                    display: inline-block;
+                    display: $display;
                     padding: 0 10px;          
                 }
                 a{
-                    display: block;
+                    display: $display_b;
                     padding-left: 5px;
-                    text-decoration: none;
+                    text-decoration: $style;
                     color: $t_color;
                     text-transform: $transform;
                     padding: 0 6px;
@@ -111,38 +117,39 @@ body{
             .social{
                 margin-left: 14%;
                 ul{
-                    list-style: none;
+                    list-style: $style;
                 }
                 li{
-                    display: inline-block;
+                    display: $display;
                     padding: 0 10px;          
                 }
                 .icon{
                     width: 40px;
                     height: 40px;
+                    background-size: $backgrounds;
                 }
                 .face{
-                    background: url(../img/icons/icon_face.png) no-repeat;
-                    background-size: contain;
+                    background: url(../img/icons/icon_face.png) $repeat;
+                    background-size: $backgrounds;
                 }
                 .link{
-                    background: url(../img/icons/icon_in.png) no-repeat;
-                    background-size: contain;
+                    background: url(../img/icons/icon_in.png) $repeat;
+                    background-size: $backgrounds;
                 }
                 .gmail{
-                    background: url(../img/icons/icon_g+.png) no-repeat;
-                    background-size: contain;
+                    background: url(../img/icons/icon_g+.png) $repeat;
+                    background-size: $backgrounds;
                 }  
                 .twiter{
-                    background: url(../img/icons/icon_twiter.png) no-repeat;
-                    background-size: contain;
+                    background: url(../img/icons/icon_twiter.png) $repeat;
+                    background-size: $backgrounds;
                 }  
                 .insta{
-                    background: url(../img/icons/icon_insta.png) no-repeat;
-                    background-size: contain;
+                    background: url(../img/icons/icon_insta.png) $repeat;
+                    background-size: $backgrounds;
                 }   
                 a{
-                    display: block;
+                    display: $display_b;
                 }
             }
         }
