@@ -1,2 +1,155 @@
 // about.scss
 
+$width: 100%;
+$height: 100%;
+$margin: 0;
+$font-stack: Helvetica, sans-serif;
+$text_color: rgb(97, 95, 95);
+$strong_color: rgba(247, 88, 52, 0.938);
+$back_color: rgb(255, 255, 255);
+
+
+#about{
+    width: $width;
+    height: 700px;
+    margin: 0;
+    font-family: $font-stack;
+    .about_background{
+        width: $width;
+        height: $height;
+        background-color: $back_color;
+    }
+    .about_container{
+        width: 68%;
+        height: $height;
+        margin: $margin;
+        float: left;
+    }
+    .about_text{
+        width: $width;
+        height: 250px;
+        margin: $margin;
+        padding-left: 275px;
+        padding-top: 140px;
+        font-size: 20px;
+        h2{
+            margin: $margin;
+            text-transform: uppercase;
+            strong{
+                color: $strong_color;
+            }
+        }
+        h3{
+            color: $text_color;
+            width: $width;
+        }
+        p{
+            color: $text_color;
+            width: $width;
+        }
+    }
+    .about_info{
+        margin: $margin;
+        width: $width;
+        font-size: 20px;
+        padding-left: 230px;
+        .icon{
+            background: no-repeat;
+            height: 2px;
+        }
+        .birth{
+            background-image: url(../img/icons/icon_calender.png);
+            background-size: contain;
+        }
+        .call{
+            background-image: url(../img/icons/icon_phone.png);
+            background-size: contain;
+        }
+        .email{
+            background-image: url(../img/icons/icon_email.png);
+            background-size: contain;
+        }
+        .web{
+            background-image: url(../img/icons/icon_web.png);
+            background-size: contain;
+        }
+        li{
+            list-style: none;
+            padding: 20px 0;
+            padding-left: 70px;    
+        }
+        strong{
+            text-align: left;
+        }
+        .s_1{
+            padding-right: 19px;
+        }
+        .s_2{
+            padding-right: 62px;
+        }
+        .s_3{
+            padding-right: 45px;
+        }
+        .s_4{
+            padding-right: 22px;
+        }
+    }
+    .button{
+        padding-top: 5px;
+        padding-left: 35px;
+        width: 300px;
+        margin: $margin;
+        .button1{
+            border: 1px solid $strong_color;
+            width: 51.5%;
+            float: left;
+            display: inline-block;
+            margin: 5px;
+            padding: 7px;
+            background-color: $strong_color;
+            a{
+                color: $back_color;
+                text-decoration: none;
+                display: inline-block;
+            }
+            a:hover{
+                color: $strong_color;
+            }
+        }
+        .button1:hover{
+            background-color: $back_color;
+        }
+        .button2{
+            border: 1px solid $strong_color;
+            width: 28.5%;
+            display: inline-block;
+            margin: 5px;
+            padding: 7px;
+            background-color: $strong_color;
+            a{
+                color: $back_color;
+                text-decoration: none;
+            }
+            a:hover{
+                color: $strong_color;
+            }
+        }
+        .button2:hover{
+            background-color: $back_color;
+        }
+    }
+    .about_img{
+        width: 32%;
+        float: right;
+        height: 90%;
+        margin: $margin;
+        padding-top: 150px;
+        .img_container{
+            width: 80%;
+            height: 80%;
+            background: url(../img/others/about_img.jpg) no-repeat;
+            background-size: contain;
+            margin: auto;
+        }
+    }
+}
