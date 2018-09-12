@@ -1,0 +1,53 @@
+// services.scss
+
+$width: 100%;
+$height: 100%;
+$margin: 0;
+$font-stack: Helvetica, sans-serif;
+$text_color: rgb(97, 95, 95);
+$strong_color: rgba(247, 88, 52, 0.938);
+$back_color: rgb(255, 255, 255);
+$display: inline-block;
+$back_size: contain;
+$decoration: none;
+
+#services{
+    width: $width;
+    height: 1000px;
+    margin: $margin;
+    .services_conteiner{
+        width: 80%;
+        height: $height;
+        margin: auto;
+        display: block;
+        .services_text{
+            text-align: center;
+            font-family: $font-stack;
+            text-transform: uppercase;
+            padding-top: 90px;
+            h2{
+                font-size: 50px;
+                margin: 0;
+            }
+            strong{
+                color: $strong_color;
+            }
+            p{
+                font-size: 24px;
+            }
+        }
+        .services_grid{
+            width: $width;
+            margin: auto;
+            .grid{
+                background-color: rgb(204, 197, 197);
+                box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.288);
+                border-radius: 1%;
+                margin: 15px;
+                width: 30%;
+                height: 280px;
+                float: left;
+            }
+        }
+    }
+}

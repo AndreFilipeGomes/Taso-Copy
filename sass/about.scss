@@ -7,7 +7,9 @@ $font-stack: Helvetica, sans-serif;
 $text_color: rgb(97, 95, 95);
 $strong_color: rgba(247, 88, 52, 0.938);
 $back_color: rgb(255, 255, 255);
-
+$display: inline-block;
+$back_size: contain;
+$decoration: none;
 
 #about{
     width: $width;
@@ -20,7 +22,7 @@ $back_color: rgb(255, 255, 255);
         background-color: $back_color;
     }
     .about_container{
-        width: 68%;
+        width: 65%;
         height: $height;
         margin: $margin;
         float: left;
@@ -53,28 +55,29 @@ $back_color: rgb(255, 255, 255);
         width: $width;
         font-size: 20px;
         padding-left: 230px;
+        color: $text_color;
         .icon{
             background: no-repeat;
             height: 2px;
         }
         .birth{
             background-image: url(../img/icons/icon_calender.png);
-            background-size: contain;
+            background-size: $back_size;
         }
         .call{
             background-image: url(../img/icons/icon_phone.png);
-            background-size: contain;
+            background-size: $back_size;
         }
         .email{
             background-image: url(../img/icons/icon_email.png);
-            background-size: contain;
+            background-size: $back_size;
         }
         .web{
             background-image: url(../img/icons/icon_web.png);
-            background-size: contain;
+            background-size: $back_size;
         }
         li{
-            list-style: none;
+            list-style: $decoration;
             padding: 20px 0;
             padding-left: 70px;    
         }
@@ -103,14 +106,14 @@ $back_color: rgb(255, 255, 255);
             border: 1px solid $strong_color;
             width: 51.5%;
             float: left;
-            display: inline-block;
+            display: $display;
             margin: 5px;
             padding: 7px;
             background-color: $strong_color;
             a{
                 color: $back_color;
-                text-decoration: none;
-                display: inline-block;
+                text-decoration: $decoration;
+                display: $display;
             }
             a:hover{
                 color: $strong_color;
@@ -122,13 +125,13 @@ $back_color: rgb(255, 255, 255);
         .button2{
             border: 1px solid $strong_color;
             width: 28.5%;
-            display: inline-block;
+            display: $display;
             margin: 5px;
             padding: 7px;
             background-color: $strong_color;
             a{
                 color: $back_color;
-                text-decoration: none;
+                text-decoration: $decoration;
             }
             a:hover{
                 color: $strong_color;
@@ -139,7 +142,7 @@ $back_color: rgb(255, 255, 255);
         }
     }
     .about_img{
-        width: 32%;
+        width: 35%;
         float: right;
         height: 90%;
         margin: $margin;
@@ -148,7 +151,7 @@ $back_color: rgb(255, 255, 255);
             width: 80%;
             height: 80%;
             background: url(../img/others/about_img.jpg) no-repeat;
-            background-size: contain;
+            background-size: $back_size;
             margin: auto;
         }
     }

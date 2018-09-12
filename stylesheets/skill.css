@@ -1,0 +1,35 @@
+.my_skill {
+  width: 100%;
+  height: 600px;
+  background-color: rgba(208, 217, 220, 0.94); }
+  .my_skill .skill_conteiner {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    padding-left: 180px; }
+    .my_skill .skill_conteiner .skill_text {
+      width: 51%;
+      float: left;
+      height: 100%;
+      font-size: 20px; }
+      .my_skill .skill_conteiner .skill_text h2 {
+        text-transform: uppercase;
+        margin: 0;
+        padding-top: 140px; }
+        .my_skill .skill_conteiner .skill_text h2 strong {
+          color: rgba(247, 88, 52, 0.938); }
+      .my_skill .skill_conteiner .skill_text p {
+        font-family: Helvetica, sans-serif;
+        color: #615f5f; }
+    .my_skill .skill_conteiner .bar_animation {
+      width: 48%;
+      float: right;
+      margin-left: 5px;
+      padding-top: 50px; }
+      .my_skill .skill_conteiner .bar_animation .bar_img {
+        width: 700px;
+        height: 300px;
+        background: url(../img/others/animated_bar.jpg) no-repeat;
+        background-size: contain; }
+
+/*# sourceMappingURL=skill.css.map */

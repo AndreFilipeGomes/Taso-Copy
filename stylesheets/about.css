@@ -8,7 +8,7 @@
     height: 100%;
     background-color: white; }
   #about .about_container {
-    width: 68%;
+    width: 65%;
     height: 100%;
     margin: 0;
     float: left; }
@@ -34,7 +34,8 @@
     margin: 0;
     width: 100%;
     font-size: 20px;
-    padding-left: 230px; }
+    padding-left: 230px;
+    color: #615f5f; }
     #about .about_info .icon {
       background: no-repeat;
       height: 2px; }
@@ -100,7 +101,7 @@
     #about .button .button2:hover {
       background-color: white; }
   #about .about_img {
-    width: 32%;
+    width: 35%;
     float: right;
     height: 90%;
     margin: 0;
