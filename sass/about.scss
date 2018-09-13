@@ -1,20 +1,9 @@
 // about.scss
 
-$width: 100%;
-$height: 100%;
-$margin: 0;
-$font-stack: Helvetica, sans-serif;
-$text_color: rgb(97, 95, 95);
-$strong_color: rgba(247, 88, 52, 0.938);
-$back_color: rgb(255, 255, 255);
-$display: inline-block;
-$back_size: contain;
-$decoration: none;
-
 #about{
     width: $width;
     height: 700px;
-    margin: 0;
+    margin: $margin;
     font-family: $font-stack;
     .about_background{
         width: $width;
@@ -25,7 +14,7 @@ $decoration: none;
         width: 65%;
         height: $height;
         margin: $margin;
-        float: left;
+        float: $floatl;
     }
     .about_text{
         width: $width;
@@ -36,7 +25,7 @@ $decoration: none;
         font-size: 20px;
         h2{
             margin: $margin;
-            text-transform: uppercase;
+            text-transform: $transform;
             strong{
                 color: $strong_color;
             }
@@ -57,7 +46,7 @@ $decoration: none;
         padding-left: 230px;
         color: $text_color;
         .icon{
-            background: no-repeat;
+            background: $repeat;
             height: 2px;
         }
         .birth{
@@ -82,7 +71,7 @@ $decoration: none;
             padding-left: 70px;    
         }
         strong{
-            text-align: left;
+            text-align: $floatl;
         }
         .s_1{
             padding-right: 19px;
@@ -105,7 +94,7 @@ $decoration: none;
         .button1{
             border: 1px solid $strong_color;
             width: 51.5%;
-            float: left;
+            float: $floatl;
             display: $display;
             margin: 5px;
             padding: 7px;
@@ -143,16 +132,16 @@ $decoration: none;
     }
     .about_img{
         width: 35%;
-        float: right;
+        float: $floatr;
         height: 90%;
         margin: $margin;
         padding-top: 150px;
         .img_container{
             width: 80%;
             height: 80%;
-            background: url(../img/others/about_img.jpg) no-repeat;
+            background: url(../img/others/about_img.jpg) $repeat;
             background-size: $back_size;
-            margin: auto;
+            margin: $margin_a;
         }
     }
 }

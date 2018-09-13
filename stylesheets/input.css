@@ -44,18 +44,18 @@ body {
         display: block;
         padding-left: 5px;
         text-decoration: none;
-        color: rgba(255, 255, 255, 0.947);
+        color: white;
         text-transform: uppercase;
         padding: 0 6px; }
       body .header_background .nav_container .main_nav .home_border {
-        border-left: 2px solid rgba(255, 255, 255, 0.947);
-        border-right: 2px solid rgba(255, 255, 255, 0.947); }
+        border-left: 2px solid white;
+        border-right: 2px solid white; }
     body .header_background .intro {
       width: 100%;
       height: 900px;
       margin: 0; }
       body .header_background .intro .intro_text {
-        color: rgba(255, 255, 255, 0.947);
+        color: white;
         padding-top: 280px;
         padding-left: 290px; }
       body .header_background .intro .intro_h1 {
@@ -63,7 +63,7 @@ body {
         font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
         font-size: 90px; }
       body .header_background .intro strong {
-        color: rgba(255, 0, 0, 0.995); }
+        color: #fa6f60; }
       body .header_background .intro .intro_p {
         font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
         font-size: 36px;
@@ -176,19 +176,19 @@ body {
       margin: 0;
       text-transform: uppercase; }
       #about .about_text h2 strong {
-        color: rgba(247, 88, 52, 0.938); }
+        color: #fa6f60; }
     #about .about_text h3 {
-      color: #615f5f;
+      color: #748182;
       width: 100%; }
     #about .about_text p {
-      color: #615f5f;
+      color: #748182;
       width: 100%; }
   #about .about_info {
     margin: 0;
     width: 100%;
     font-size: 20px;
     padding-left: 230px;
-    color: #615f5f; }
+    color: #748182; }
     #about .about_info .icon {
       background: no-repeat;
       height: 2px; }
@@ -224,33 +224,33 @@ body {
     width: 300px;
     margin: 0; }
     #about .button .button1 {
-      border: 1px solid rgba(247, 88, 52, 0.938);
+      border: 1px solid #fa6f60;
       width: 51.5%;
       float: left;
       display: inline-block;
       margin: 5px;
       padding: 7px;
-      background-color: rgba(247, 88, 52, 0.938); }
+      background-color: #fa6f60; }
       #about .button .button1 a {
         color: white;
         text-decoration: none;
         display: inline-block; }
       #about .button .button1 a:hover {
-        color: rgba(247, 88, 52, 0.938); }
+        color: #fa6f60; }
     #about .button .button1:hover {
       background-color: white; }
     #about .button .button2 {
-      border: 1px solid rgba(247, 88, 52, 0.938);
+      border: 1px solid #fa6f60;
       width: 28.5%;
       display: inline-block;
       margin: 5px;
       padding: 7px;
-      background-color: rgba(247, 88, 52, 0.938); }
+      background-color: #fa6f60; }
       #about .button .button2 a {
         color: white;
         text-decoration: none; }
       #about .button .button2 a:hover {
-        color: rgba(247, 88, 52, 0.938); }
+        color: #fa6f60; }
     #about .button .button2:hover {
       background-color: white; }
   #about .about_img {
@@ -269,7 +269,7 @@ body {
 .my_skill {
   width: 100%;
   height: 600px;
-  background-color: rgba(208, 217, 220, 0.94); }
+  background-color: #f2f2f2; }
   .my_skill .skill_conteiner {
     width: 80%;
     height: 100%;
@@ -285,10 +285,10 @@ body {
         margin: 0;
         padding-top: 140px; }
         .my_skill .skill_conteiner .skill_text h2 strong {
-          color: rgba(247, 88, 52, 0.938); }
+          color: #fa6f60; }
       .my_skill .skill_conteiner .skill_text p {
         font-family: Helvetica, sans-serif;
-        color: #615f5f; }
+        color: #748182; }
     .my_skill .skill_conteiner .bar_animation {
       width: 48%;
       float: right;
@@ -310,27 +310,122 @@ body {
     margin: auto;
     display: block; }
     #services .services_conteiner .services_text {
+      width: 100%;
       text-align: center;
       font-family: Helvetica, sans-serif;
       text-transform: uppercase;
-      padding-top: 90px; }
+      padding-top: 70px; }
       #services .services_conteiner .services_text h2 {
         font-size: 50px;
         margin: 0; }
       #services .services_conteiner .services_text strong {
-        color: rgba(247, 88, 52, 0.938); }
+        color: #fa6f60; }
       #services .services_conteiner .services_text p {
         font-size: 24px; }
+        #services .services_conteiner .services_text p span {
+          color: #fa6f60;
+          position: relative;
+          font-size: 30px;
+          top: -10px;
+          display: inline-block; }
     #services .services_conteiner .services_grid {
       width: 100%;
-      margin: auto; }
+      margin: auto;
+      padding-left: 22px;
+      padding-top: 20px; }
       #services .services_conteiner .services_grid .grid {
-        background-color: #ccc5c5;
-        box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.288);
+        text-align: center;
+        background-color: #f6f7fe;
+        box-shadow: 1px 1px 4px 4px rgba(216, 216, 216, 0.399);
         border-radius: 1%;
         margin: 15px;
         width: 30%;
         height: 280px;
         float: left; }
+      #services .services_conteiner .services_grid .g_icon {
+        width: 70px;
+        height: 70px;
+        margin: auto;
+        padding-top: 20px;
+        padding-bottom: 20px; }
+        #services .services_conteiner .services_grid .g_icon .design {
+          width: 45px;
+          height: 45px;
+          margin: auto;
+          margin-top: 12px;
+          background: url(../img/icons/icon_brush.png) no-repeat;
+          background-size: contain; }
+        #services .services_conteiner .services_grid .g_icon .website {
+          width: 50px;
+          height: 50px;
+          margin: auto;
+          margin-top: 12px;
+          background: url(../img/icons/icon_display.png) no-repeat;
+          background-size: contain; }
+        #services .services_conteiner .services_grid .g_icon .uiux {
+          width: 50px;
+          height: 50px;
+          margin: auto;
+          margin-top: 12px;
+          background: url(../img/icons/icon_uiux.png) no-repeat;
+          background-size: contain; }
+        #services .services_conteiner .services_grid .g_icon .graphic {
+          width: 50px;
+          height: 50px;
+          margin: auto;
+          margin-top: 12px;
+          background: url(../img/icons/icon_camera.png) no-repeat;
+          background-size: contain; }
+        #services .services_conteiner .services_grid .g_icon .support {
+          width: 50px;
+          height: 50px;
+          margin: auto;
+          margin-top: 12px;
+          background: url(../img/icons/icon_suppport.png) no-repeat;
+          background-size: contain; }
+        #services .services_conteiner .services_grid .g_icon .seo {
+          width: 50px;
+          height: 50px;
+          margin: auto;
+          margin-top: 12px;
+          margin-right: 5px;
+          background: url(../img/icons/icon_lamp.png) no-repeat;
+          background-size: contain; }
+        #services .services_conteiner .services_grid .g_icon .border {
+          width: 80px;
+          height: 80px;
+          border: 1px solid #fa6f60;
+          border-radius: 50%;
+          background-color: #fa6f60; }
+      #services .services_conteiner .services_grid .g_text {
+        font-family: Helvetica, sans-serif;
+        font-size: 20px; }
+        #services .services_conteiner .services_grid .g_text h3 {
+          margin: 0; }
+        #services .services_conteiner .services_grid .g_text p {
+          color: #748182; }
+
+.number_animation {
+  width: 100%;
+  height: 300px;
+  margin: 0;
+  background: url(../img/background/header_background.jpg) no-repeat; }
+  .number_animation .animation_grid {
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    display: flex; }
+    .number_animation .animation_grid .a_grid {
+      width: 100%;
+      height: 100%;
+      color: white;
+      text-align: center;
+      font-family: Helvetica, sans-serif;
+      padding-top: 100px; }
+      .number_animation .animation_grid .a_grid h4 {
+        font-size: 40px;
+        margin: 0; }
+      .number_animation .animation_grid .a_grid p {
+        font-size: 28px; }
 
 /*# sourceMappingURL=input.css.map */

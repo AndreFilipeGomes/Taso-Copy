@@ -1,31 +1,26 @@
 // skill.scss
 
-$width: 100%;
-$height: 100%;
-$font-stack: Helvetica, sans-serif;
-$text_color: rgb(97, 95, 95);
-
 
 .my_skill{
     width: $width;
     height: 600px;
-    background-color: rgba(208, 217, 220, 0.94);
+    background-color: rgb(242, 242, 242);
     .skill_conteiner{
         width: 80%;
         height: $height;
-        margin: auto;
+        margin: $margin_a;
         padding-left: 180px;
         .skill_text{
             width: 51%;
-            float: left;
+            float: $floatl;
             height: $height;
             font-size: 20px;
             h2{
-                text-transform: uppercase;
+                text-transform: $transform;
                 margin: 0;
                 padding-top: 140px;
                 strong{
-                    color: rgba(247, 88, 52, 0.938);
+                    color: $strong_color;
                 }
             }
             p{
@@ -35,14 +30,14 @@ $text_color: rgb(97, 95, 95);
         }
         .bar_animation{
             width: 48%;
-            float: right;
+            float: $floatr;
             margin-left: 5px;
             padding-top: 50px;
             .bar_img{
                 width: 700px;
                 height: 300px;
-                background: url(../img/others/animated_bar.jpg) no-repeat;
-                background-size: contain;
+                background: url(../img/others/animated_bar.jpg) $repeat;
+                background-size: $back_size;
                 
             }
         }
