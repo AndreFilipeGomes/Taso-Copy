@@ -1,0 +1,82 @@
+// header_info.scss
+// 
+.header_background{
+    .intro{
+        width: 100%;
+        height: 850px;
+        margin: 0;
+        padding: 0;
+        color: $white;
+        display: flex;
+        align-items: center;
+        .intro_container{
+            margin-left: 17%;
+            height: 300px;
+            .intro_text{
+                display: inline-block;
+                h1{
+                    font-size: 4.25em;
+                    text-transform: uppercase;
+                    margin: 0;
+                    letter-spacing: .03em;
+                    line-height: 1em;
+                    strong{
+                        color: $orange;
+                    }
+                }
+                p{
+                    font-size: 1.8em;
+                    letter-spacing: 2px;
+                    margin-top: 25px;
+                }
+            }
+            .social{
+                ul{
+                    width: 85%;
+                    height: 40px;
+                    font-size: 1em;
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    li{
+                        width: 10%;
+                        height: 100%;
+                        display: inline-block;
+                        list-style: none;
+                        a{
+                            text-decoration: none;
+                            color: $white;
+                        }
+                        .icon{
+                            width: 100%;
+                            height: 100%;
+                            display: inline-block;
+                        }
+                        .face{
+                            background: url(../img/icons/icon_face.png) no-repeat;
+                            background-size: contain; 
+                        }
+                        .link{
+                            background: url(../img/icons/icon_in.png) no-repeat;
+                            background-size: contain; 
+                        }
+                        .gmail{
+                            background: url(../img/icons/icon_g+.png) no-repeat;
+                            background-size: contain; 
+                        }
+                        .twiter{
+                            background: url(../img/icons/icon_twiter.png) no-repeat;
+                            background-size: contain; 
+                        }
+                        .insta{
+                            background: url(../img/icons/icon_insta.png) no-repeat;
+                            background-size: contain; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

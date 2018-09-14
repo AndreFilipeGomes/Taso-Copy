@@ -1,0 +1,90 @@
+// header.scss
+// 
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    #main_wrapper{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        font-size: $f_size;
+        font-family: $helvetica;
+        color: $white;
+        background-color: black;
+        .header_background{
+            width: 100%;
+            height: 1000px;
+            margin: 0;
+            background: url(../img/background/header_background.jpg) no-repeat;
+            background-size: cover;
+            .nav_container{
+                width: 100%;
+                height: 100px;
+                margin: 0;
+                display: flex;
+                text-transform: uppercase;
+                .logo_container{
+                    width: 38%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    h2{
+                        width: 70px;
+                        height: 1.133em;
+                        display: inline-block;
+                        font-size: 1.133em;
+                        margin: 0;
+                        letter-spacing: 2px;
+                    }
+                }
+                .main_nav{
+                    width: 62%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    ul{
+                        width: 100%;
+                        font-size: .65em;
+                        margin: 0;
+                        padding: 0;
+                        display: flex;
+                        flex-flow: row wrap;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    li{
+                        display: inline-block;
+                        list-style: none;
+                        margin: 0 5px;
+                        padding: 0 5px;
+                        text-align: center;
+                        span{              
+                            display: inline-block;
+                            position: relative;
+                            }
+                        span::before,
+                        span::after{
+                            content: "";
+                            border: 1px solid $white;
+                            height: .9em;
+                            background-color: $white;
+                        }
+                        span:before {
+                            margin-right: 5px;
+                        }
+                        span:after {
+                            margin-left: 5px;
+                        }
+                        a{
+                            text-decoration: none;
+                            color: $white;
+                        }                        
+                    }
+                }
+            }
+        }
+    }
+}

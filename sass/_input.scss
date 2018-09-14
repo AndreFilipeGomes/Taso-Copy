@@ -1,5 +1,6 @@
 // _input.scss
-
+// 
+// import scss files
 @import 'variables';
 @import 'header';
 @import 'arrow';
@@ -8,3 +9,9 @@
 @import 'skill';
 @import 'services';
 @import 'numb_animation';
+@import 'header_info';
+// 
+// clearfix
+.clearfix {
+    overflow: auto;
+}
