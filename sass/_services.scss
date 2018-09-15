@@ -2,7 +2,7 @@
 
 #services{
     width: 100%;
-    height: 1000px; 
+    height: 950px; 
     color: black;
     // delete after
     background-color: white;
@@ -16,6 +16,8 @@
             height: 90%;
             align-self: center;
             .services_text{
+                margin-top: 50px;
+                margin-bottom: 50px;
                 text-align: center;
                 text-transform: uppercase;
                 h2{
@@ -42,6 +44,7 @@
                     background-color: $orange;
                     display: flex;
                     align-self: center;
+                    margin: 5px;
                 }
                 p::after{
                     content: "";
@@ -50,6 +53,82 @@
                     background-color: $orange;
                     display: flex;
                     align-self: center;
+                    margin: 5px;
+                }
+            }
+            .services_grid{
+                width: 100%;
+                height: 65%;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-around;
+                align-self: center;
+                margin-top: 25px;
+                .grid{
+                    width: 30%;
+                    height: 250px;
+                    margin: 0;
+                    text-align: center;
+                    background-color: $blue_grid;
+                    align-self: center;
+                    box-shadow: 2px 2px 3px 4px $grey_shadow;
+                    padding: 5px;
+                    border-radius: 1px;
+                    .g_icon{
+                        padding-top: 10px;
+                        margin: auto;
+                        width: 70px;
+                        height: 70px;
+                        .border{
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 50%;
+                            background-color: $orange;
+                            display: flex;
+                            .design,
+                            .website,
+                            .uiux,
+                            .graphic,
+                            .support,
+                            .seo{
+                                margin: auto;
+                                width: 50%;
+                                height: 50%;
+                            }
+                            .design{
+                                background: url(../img/icons/icon_brush.png) no-repeat;
+                                background-size: cover;
+                            }
+                            .website{
+                                background: url(../img/icons/icon_display.png) no-repeat;
+                                background-size: cover;
+                            }
+                            .uiux{
+                                background: url(../img/icons/icon_uiux.png) no-repeat;
+                                background-size: cover;
+                            }
+                            .graphic{
+                                background: url(../img/icons/icon_camera.png) no-repeat;
+                                background-size: cover;
+                            }
+                            .support{
+                                background: url(../img/icons/icon_suppport.png) no-repeat;
+                                background-size: cover;
+                            }
+                            .seo{
+                                background: url(../img/icons/icon_lamp.png) no-repeat;
+                                background-size: cover;
+                            }
+                        } 
+                    }
+                    h3{
+                        color: $black;
+                        letter-spacing: .04em;
+                    }
+                    p{
+                        color: $grey_text2;
+                        letter-spacing: .04em;
+                    }
                 }
             }
         }
