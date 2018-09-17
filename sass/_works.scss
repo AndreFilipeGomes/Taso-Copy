@@ -1,0 +1,99 @@
+// works.scss
+// 
+#works{
+    width: 100%;
+    height: 900px;
+    margin: 0;
+    .work_background{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        background-color: $grey_background;
+        color: $black;
+        .work_text{
+            text-align: center;
+            text-transform: uppercase;
+            h2{
+                padding-top: 100px;
+                display: inline-block;
+                font-size: 2.15em;
+                margin: 0;
+                letter-spacing: 1px;
+                line-height: 1.2em;
+                strong{
+                    color: $orange;
+                }
+            }
+            p{
+                font-size: .8em;
+                letter-spacing: 1.5px;
+                line-height: 1.2em;
+                display: flex;
+                justify-content: center;    
+            }
+            p::before,
+            p::after{
+                content: "";
+                width: 30px;
+                height: 2px;
+                background-color: $orange;
+                display: flex;
+                align-self: center;
+                margin: 5px;
+            }
+        }
+        .work_button{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            margin: 0;
+            padding-top: 50px;
+            .button_container{
+                width: 60%;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                margin: auto;
+                .button{
+                    height: 100%;
+                    float: left;
+                    background-color: $white;
+                    text-align: center;
+                    display: flex;
+                    justify-content: space-between;
+                    border: 1px solid $black;
+                    text-transform: uppercase;
+                    font-size: .8em;
+                }
+                .w_button1,
+                .w_button2,
+                .w_button3,
+                .w_button4{
+                    height: 45px;
+                    margin: 0 10px;
+                    a{
+                        width: 100%;
+                        height: 15px;
+                        text-decoration: none;
+                        color: $black;
+                        margin: auto;
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+                .w_button1{
+                    width: 45px;
+                }
+                .w_button2{
+                    width: 125px;
+                }
+                .w_button3{
+                    width: 125px;
+                }
+                .w_button4{
+                    width: 145px;
+                }
+            }
+        }
+    }
+}

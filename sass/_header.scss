@@ -11,12 +11,11 @@ body{
         font-size: $f_size;
         font-family: $helvetica;
         color: $white;
-        background-color: black;
         .header_background{
             width: 100%;
             height: 1000px;
             margin: 0;
-            background: url(../img/background/header_background.jpg) no-repeat;
+            background: url(../img/background/parallax_background.jpg) no-repeat;
             background-size: cover;
             .nav_container{
                 width: 100%;

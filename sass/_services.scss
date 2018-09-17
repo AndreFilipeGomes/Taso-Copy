@@ -37,15 +37,7 @@
                     display: flex;
                     justify-content: center;    
                 }
-                p::before{
-                    content: "";
-                    width: 30px;
-                    height: 2px;
-                    background-color: $orange;
-                    display: flex;
-                    align-self: center;
-                    margin: 5px;
-                }
+                p::before,
                 p::after{
                     content: "";
                     width: 30px;

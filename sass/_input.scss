@@ -3,13 +3,21 @@
 // import scss files
 @import 'variables';
 @import 'header';
-@import 'arrow';
+@import 'header_info';
 @import 't_animation';
+@import 'arrow';
 @import 'about';
 @import 'skill';
 @import 'services';
 @import 'numb_animation';
-@import 'header_info';
+@import 'works';
+@import 'experience';
+@import 'slid-show';
+@import 'blog';
+@import 'contact';
+@import 'iframe';
+@import 'footer';
+
 // 
 // clearfix
 .clearfix {
