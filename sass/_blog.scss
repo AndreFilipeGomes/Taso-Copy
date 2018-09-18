@@ -3,7 +3,7 @@
 
 #blog{
     width: 100%;
-    height: 800px;
+    height: 850px;
     margin: 0;
     .blog__background{
         width: 100%;
@@ -47,6 +47,141 @@
                     align-self: center;
                     margin: 5px;
                 }
+            }
+            .container__grid{
+                width: 100%;
+                height: 70%;
+                margin: 0;
+                margin-top: 50px;
+                display: flex;
+                justify-content: left;
+            }
+            .grid{
+                width: 30%;
+                height: 100%;
+                margin-left: 25px;
+                float: left;
+                border-radius: 5px 5px;
+                box-shadow: -5px 20px 20px -.5px $grey;
+                .grid__img{
+                    width: 100%;
+                    height: 250px;
+                    margin: 0;
+                    overflow: hidden;
+                    background-size: contain;
+                    .img--container{
+                        width: 100%;
+                        height: 100%;
+                        margin: 0;
+                        display: inline-block;
+                        .img1,
+                        .img2,
+                        .img3{
+                            width: 100%;
+                            height: 100%;
+                            margin: 0;
+                            transition: all .3s ease-in-out;
+                        }
+                        .img1{
+                            background: url(../img/background/parallax_background.jpg) no-repeat;
+                            background-size: cover;
+                        }
+                        .img2{
+                            background: url(../img/background/parallax_background.jpg) no-repeat;
+                            background-size: cover;
+                        }
+                        .img3{
+                            background: url(../img/background/parallax_background.jpg) no-repeat;
+                            background-size: cover;
+                        }
+                        .img1:hover,
+                        .img2:hover,
+                        .img3:hover{
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+                .grid__text{
+                    width: 100%;
+                    height: 30%;
+                    margin-bottom: 38px;
+                    h4{
+                        margin-top: 50px;
+                        font-size: 1.2em;
+                        margin-left: 10px;
+                        color: $black;
+                    }
+                    p{
+                        margin: 0;
+                        line-height: 1.5em;
+                        color: $grey_text;
+                        font-size: .9em;
+                        margin-left: 10px;
+                        margin-bottom: 10px;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: $black;
+                        font-size: .9em;
+                        margin-left: 10px;
+                        span{
+                            padding-bottom: 1px;
+                            border-bottom: 4px solid $orange;
+                        }
+                    }
+                    a:hover{
+                        color: $orange;
+                    }
+                    .under_line{
+                        display: inline;
+                        position: relative;
+                        overflow: hidden;
+                    }
+                    .under_line:after {
+                        content: "";
+                        position: absolute;
+                        z-index: -1;
+                        left: 45%;
+                        right: 100%;
+                        bottom: -5px;
+                        background: $orange;
+                        height: 4px;
+                        transition-property: left right;
+                        transition-duration: 0.3s;
+                        transition-timing-function: ease-out;
+                    }
+                    .under_line:hover:after,
+                    .under_line:focus:after,
+                    .under_line:active:after {
+                        right: 0;
+                    }
+                }
+                .social__feed{
+                    width: 100%;
+                    height: 40px;
+                    margin: 0;
+                    display: flex;
+                    justify-content: flex-end;
+                    .social__feed--background{
+                        width: 100%;
+                        height: 100%;
+                        margin: 0;
+                        background-color: $orange;
+                        display: flex;
+                        align-content: center;
+                        ul{
+                            display: flex;
+                            justify-content: center;
+                            margin: auto;
+                            padding: 0;
+                            li{
+                                display: flex;
+                                justify-content: space-between;
+                                margin-right: 20px;
+                            }
+                        }
+                    }
+                } 
             }
         }
     }

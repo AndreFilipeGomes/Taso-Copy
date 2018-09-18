@@ -57,14 +57,14 @@
                                 list-style-position: inside;
                                 height: 100%;
                                 list-style: none;
-                                display: block;
+                                display: flex;
                                 margin-bottom: 20px;
+                                align-items: center;
                                 img{
                                     width: 18px;
                                     height: 18px;
                                     padding: 5px;
                                     border: 2px solid $grey_text2;
-                                    margin: auto;
                                 }
                                 span{
                                     color: $grey_text2;
